@@ -29,7 +29,7 @@ function App() {
         <Route path="/CourseForm" element={<AddCourseForm />} />
         <Route path="/" element={<AdminLogin />} />
         <Route path="/Dashboard" element={<AdminDashboard />} />
-        <Route path="/AddUsers" element={<AddUsers />} />
+        <Route path="/AddUsers" element={<AddUsers />} /> 
 
       </Routes>
     </Router>

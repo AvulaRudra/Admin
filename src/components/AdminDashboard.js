@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import { collection, getDocs } from 'firebase/firestore';
 import { db } from '../firebase';
+import CoursePage from './CoursePage'; // Import CoursePage
+import EditCourseForm from './EditCourseForm';
 
 const AdminDashboard = () => {
   const [totalUsers, setTotalUsers] = useState(0);
@@ -64,6 +66,8 @@ const AdminDashboard = () => {
           </div>
         </div>
       </div>
+      <EditCourseForm/>
+      <CoursePage/> {/* Render CoursePage component */}
     </div>
   );
 };

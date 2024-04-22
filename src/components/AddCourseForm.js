@@ -1,18 +1,16 @@
-
-
 import React, { useState, useEffect } from 'react';
 import { initializeApp } from 'firebase/app';
 import { getFirestore, collection, addDoc } from 'firebase/firestore';
 import { getStorage, ref, uploadBytesResumable, getDownloadURL } from 'firebase/storage';
 
 const firebaseConfig = {
-  apiKey: "AIzaSyA6hi5WniSmIBsPCwcqk_QVizh8yHcYM88",
-  authDomain: "ravuru-ccbcd.firebaseapp.com",
-  projectId: "ravuru-ccbcd",
-  storageBucket: "ravuru-ccbcd.appspot.com",
-  messagingSenderId: "438776822141",
-  appId: "1:438776822141:web:31b8db8d2b789959003414",
-  measurementId: "G-9TDRW616T8"
+  apiKey: "AIzaSyA4qjcP40hgzx-gWKqVB6c9h9OKpecZobw",
+  authDomain: "lms-1-36b1f.firebaseapp.com",
+  projectId: "lms-1-36b1f",
+  storageBucket: "lms-1-36b1f.appspot.com",
+  messagingSenderId: "568729903010",
+  appId: "1:568729903010:web:5e85a998503b1054f9dcfb",
+  measurementId: "G-Z5844EFCH1"
 };
 
 const app = initializeApp(firebaseConfig);
@@ -115,6 +113,50 @@ const AddCourseForm = () => {
   };
   
   
+  // const handleSubmit = async () => {
+  //   try {
+  //     // Check if any file is still uploading
+  //     if (isUploading) {
+  //       setAlertMessage('Please wait for all files to finish uploading.');
+  //       setShowAlert(true);
+  //       return;
+  //     }
+  
+  //     const courseData = {
+  //       courseName,
+  //       description,
+  //       courseThumbnailURL, // Add course thumbnail URL here
+  //       subCourses
+  //     };
+  
+  //     // Map over subCourses to include additionalContents
+  //     const formattedSubCourses = subCourses.map(subCourse => ({
+  //       ...subCourse,
+  //       additionalContents: subCourse.additionalContents.map(content => ({
+  //         type: content.type,
+  //         value: content.value // URL fetched from storage
+  //       }))
+  //     }));
+  
+  //     courseData.subCourses = formattedSubCourses;
+  
+  //     await addDoc(collection(db, 'courses'), courseData);
+  
+  //     setAlertMessage('Course added successfully');
+  //     setShowAlert(true);
+  
+  //     setCourseName('');
+  //     setDescription('');
+  //     setCourseThumbnailURL(''); // Reset course thumbnail URL
+  //     setSubCourses([{ name: '', description: '', additionalContents: [], topics: [] }]);
+  //     setCurrentStep(1);
+  //   } catch (error) {
+  //     setAlertMessage('Error adding course. Please try again.');
+  //     setShowAlert(true);
+  //     console.error('Error adding course:', error);
+  //   }
+  // };
+
   const handleSubmit = async () => {
     try {
       // Check if any file is still uploading
@@ -158,6 +200,7 @@ const AddCourseForm = () => {
       console.error('Error adding course:', error);
     }
   };
+  
   
 
   const handleAddSubCourse = () => {

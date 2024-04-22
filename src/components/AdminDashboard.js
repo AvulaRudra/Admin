@@ -3,6 +3,7 @@ import { collection, getDocs } from 'firebase/firestore';
 import { db } from '../firebase';
 import CoursePage from './CoursePage'; // Import CoursePage
 import EditCourseForm from './EditCourseForm';
+import CourseList from './CourseList';
 
 const AdminDashboard = () => {
   const [totalUsers, setTotalUsers] = useState(0);
@@ -66,8 +67,9 @@ const AdminDashboard = () => {
           </div>
         </div>
       </div>
+      {/* <CourseList/>
       <EditCourseForm/>
-      <CoursePage/> {/* Render CoursePage component */}
+      <CoursePage/>  */}
     </div>
   );
 };

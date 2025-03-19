@@ -5,13 +5,13 @@ import { getFirestore } from "firebase/firestore"; // Import getFirestore
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyC0KrHXsLvp0mg0kA0er74xCTY06TY9J4I",
-  authDomain: "skillrise-7d627.firebaseapp.com",
-  projectId: "skillrise-7d627",
-  storageBucket: "skillrise-7d627.firebasestorage.app",
-  messagingSenderId: "755954586172",
-  appId: "1:755954586172:web:037aa58e8708529484e939",
-  measurementId: "G-XM850MS5DX"
+  apiKey: "AIzaSyDkeyEL2q7RPZldMds4STNToMBqpmjfgGY",
+  authDomain: "samuel-42852.firebaseapp.com",
+  projectId: "samuel-42852",
+  storageBucket: "samuel-42852.firebasestorage.app",
+  messagingSenderId: "980924923122",
+  appId: "1:980924923122:web:c8024f9e0fef37cc04646b",
+  measurementId: "G-5TR65R1860"
 };
 
 // Initialize Firebase
